@@ -1,0 +1,29 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<div class="py-20 row">
+    <div class="col-sm-2">
+        <img src="{{ image }}" alt=" {{ full_name }}">
+    </div>
+
+    <div class="col">
+        <h1>{{ full_name }} 's Profile</h1>
+        <p>ID : {{ name }}</p>
+        <div clss="my-10">
+            <p>Library of {{ first_name }} ! </p>
+            <div class="mt-4">
+                <p>First Name : {{ first_name }}</p>
+                <p>Last Name : {{ last_name }}</p>
+                <br>
+                <h3>Contact</h3>
+                <p>Email : {{ email_address }}</p>
+                <p>Phone : {{ phone }}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->
